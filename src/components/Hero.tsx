@@ -100,14 +100,14 @@ export const Hero: React.FC<HeroProps> = ({ onBookNow }) => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-4"
             >
-              {/* Explore decorations button */}
-              <a
-                href="#occasions"
+              {/* Book Now button */}
+              <button
+                onClick={onBookNow}
                 className="bg-[#DB4D88] hover:bg-[#C23C73] text-white text-[13px] font-bold px-8 py-3.5 rounded-full transition-all shadow-md hover:shadow-lg text-center flex items-center justify-center gap-2 cursor-pointer border border-[#DB4D88]"
               >
-                <span>Explore Decorations</span>
+                <span>Book Now</span>
                 <ArrowRight size={16} />
-              </a>
+              </button>
 
               {/* Chat on WhatsApp */}
               <a
